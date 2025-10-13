@@ -73,7 +73,7 @@ A full-stack, feature-rich Todo application built with React, Node.js, and Mongo
 
 1. **Clone the repository**
 ```bash
-git clone <https://github.com/techgit41/Advanced-Todo-App>
+git clone https://github.com/techgit41/Advanced-Todo-App
 cd advanced-todo-app
 ```
 
