@@ -1,0 +1,165 @@
+.todo-item {
+  border-left: 4px solid var(--primary);
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.todo-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.todo-item.completed {
+  border-left-color: var(--success);
+  opacity: 0.8;
+}
+
+.todo-item.overdue {
+  border-left-color: var(--danger);
+}
+
+.todo-item.overdue::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--danger);
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.todo-title {
+  margin: 0;
+  color: var(--dark);
+  flex: 1;
+  line-height: 1.4;
+}
+
+.todo-item.completed .todo-title {
+  text-decoration: line-through;
+  color: var(--gray);
+}
+
+.todo-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.btn-sm {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+}
+
+.todo-description {
+  color: var(--gray);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+  border-left: 2px solid #e9ecef;
+}
+
+.todo-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.meta-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.meta-dates {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: flex-end;
+}
+
+.priority-badge, .category-tag, .tag {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+.priority-high {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.priority-medium {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.priority-low {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.category-tag {
+  background: #e0e7ff;
+  color: var(--primary);
+}
+
+.tag {
+  background: #f3f4f6;
+  color: var(--gray);
+}
+
+.due-date, .created-date {
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+
+.due-date.overdue {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.completion-badge {
+  background: var(--success);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .todo-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .todo-actions {
+    justify-content: flex-end;
+  }
+  
+  .todo-meta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .meta-dates {
+    align-items: flex-start;
+  }
+}
