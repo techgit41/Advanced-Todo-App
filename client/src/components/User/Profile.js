@@ -124,10 +124,6 @@ const Profile = () => {
                   {format(new Date(profile.createdAt), 'MMMM dd, yyyy')}
                 </div>
               </div>
-              <div className="info-item">
-                <label>User ID</label>
-                <div className="info-value small">{profile.id}</div>
-              </div>
             </div>
           </div>
         )}
@@ -196,5 +192,6 @@ const Profile = () => {
     </div>
   );
 };
+
 
 export default Profile;
