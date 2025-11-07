@@ -4,8 +4,6 @@ A full-stack, feature-rich Todo application built with React, Node.js, and Mongo
 
 ![Advanced Todo App](https://img.shields.io/badge/React-18.2.0-blue) ![Node.js](https://img.shields.io/badge/Node.js-Express-green) ![MongoDB](https://img.shields.io/badge/MongoDB-Database-green) ![JWT](https://img.shields.io/badge/Auth-JWT-orange) ![Real-time](https://img.shields.io/badge/Features-Real--time-yellow)
 
-
-[![Alt Text for the video, e.g., Watch the demo](https://img.youtube.com/vi/OPc_BSfm35w/hqdefault.jpg)](https://www.youtube.com/watch?v=OPc_BSfm35w)
 ### 🎥 Preview - Watch the Quick Demo Below
 
 [![Click to watch the video demo](https://img.youtube.com/vi/OPc_BSfm35w/hqdefault.jpg)](https://www.youtube.com/watch?v=OPc_BSfm35w)
