@@ -240,10 +240,6 @@ JWT_SECRET=your-super-secret-jwt-key
 NODE_ENV=production
 ```
 
-**Frontend (.env)**
-```env
-REACT_APP_API_URL=https://your-backend.herokuapp.com
-```
 
 ## 🐛 Troubleshooting
 
